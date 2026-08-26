@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DlLabsSystems — Applications mobiles pour professionnels</title>
+<meta name="description" content="DlLabsSystems développe des applications mobiles métier pour professionnels, dont MenuiBat pour les artisans menuisiers.">
+<style>
+  :root {
+    --bg: #0b0f14;
+    --bg-alt: #111826;
+    --surface: #161f2e;
+    --border: #223049;
+    --text: #eef2f7;
+    --text-dim: #9aa8bd;
+    --accent: #4f9dff;
+    --accent-2: #ff9f4f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header {
+    padding: 100px 24px 90px;
+    text-align: center;
+    background:
+      radial-gradient(circle at 20% 0%, rgba(79,157,255,0.18), transparent 55%),
+      radial-gradient(circle at 80% 10%, rgba(255,159,79,0.14), transparent 55%),
+      var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .logo-card {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px 32px;
+    margin: 0 auto 28px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  }
+  .logo-card img {
+    display: block;
+    height: 90px;
+    width: auto;
+  }
+  header h1 {
+    font-size: clamp(28px, 5vw, 44px);
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+  }
+  header p.tagline {
+    color: var(--text-dim);
+    font-size: clamp(15px, 2vw, 18px);
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  section {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  section h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin: 0 0 16px;
+  }
+  section .lead {
+    font-size: clamp(17px, 2.2vw, 20px);
+    max-width: 640px;
+  }
+
+  .app-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 28px;
+  }
+  .app-icon {
+    flex: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: linear-gradient(160deg, #1c2942, #0e1524);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+  }
+  .app-card h3 {
+    margin: 0 0 6px;
+    font-size: 19px;
+  }
+  .app-card p {
+    margin: 0 0 14px;
+    color: var(--text-dim);
+    font-size: 15px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(79,157,255,0.14);
+    color: var(--accent);
+    border: 1px solid rgba(79,157,255,0.3);
+  }
+
+  .future-box {
+    margin-top: 28px;
+    border: 1px dashed var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    color: var(--text-dim);
+    font-size: 15px;
+  }
+
+  footer {
+    padding: 48px 24px 64px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  footer a { color: var(--text-dim); }
+  footer .contact { margin-bottom: 8px; }
+  footer .contact a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-card">
+    <img src="assets/dllabssystems-logo.png" alt="DlLabsSystems — Applications & logiciels">
+  </div>
+  <p class="tagline">Studio de développement mobile — nous concevons des applications métier pensées pour le terrain, pas pour la démo.</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Qui nous sommes</h2>
+    <p class="lead">
+      DlLabsSystems conçoit des applications iOS et Android destinées aux
+      professionnels qui ont besoin d'outils fiables sur le terrain :
+      relevés, gestion de chantier, export de documents. Nos apps sont
+      pensées d'abord pour être utilisables sans connexion, rapides à
+      prendre en main, et respectueuses des données de leurs utilisateurs.
+    </p>
+  </section>
+
+  <section>
+    <h2>Nos applications</h2>
+    <div class="app-card">
+      <div class="app-icon">🚪</div>
+      <div>
+        <span class="badge">App phare</span>
+        <h3>MenuiBat</h3>
+        <p>
+          Relevé de menuiseries sur chantier pour les professionnels de la
+          menuiserie : cotes, schémas d'ouverture, estimation matériel et
+          export PDF prêt à transmettre. Sauvegarde iCloud incluse.
+        </p>
+        <a href="mailto:contact@dllabssystems.fr">En savoir plus →</a>
+      </div>
+    </div>
+
+    <div class="future-box">
+      D'autres applications métier sont en préparation chez DlLabsSystems.
+      Reviens bientôt pour les découvrir.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="contact">Une question, un projet ? <a href="mailto:contact@dllabssystems.fr">contact@dllabssystems.fr</a></div>
+  <div>© 2026 DlLabsSystems — SIRET 108 739 822 00014</div>
+</footer>
+
+</body>
+</html>
